@@ -1,5 +1,10 @@
 # Martin-Li-96-k8s-NVIDA-gpu-deployment
 
+For Fedora need install iproute-tc
+```
+dnf install -y iproute-tc
+```
+
 # HP Master 1
 
 1. Pre-install
