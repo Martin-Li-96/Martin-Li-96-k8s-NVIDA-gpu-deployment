@@ -4,7 +4,10 @@ For Fedora need install iproute-tc
 ```
 dnf install -y iproute-tc
 ```
-
+Stop swap
+```
+sudo dnf remove zram-generator-defaults
+```
 # HP Master 1
 
 1. Pre-install
