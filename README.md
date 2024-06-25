@@ -1070,9 +1070,9 @@ $ sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn
 # RaspberryPi
 Add following command to grub ('linux-default')
 ```
-cgroup enable=cpuset
-cgroup enable=memory
-cgroup memory=1
+cgroup_enable=cpuset
+cgroup_enable=memory
+cgroup_memory=1
 ```
 
 ```
