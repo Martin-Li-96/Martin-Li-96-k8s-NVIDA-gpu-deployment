@@ -1079,3 +1079,9 @@ cgroup_memory=1
 sudo apt install linux-modules-extra-raspi && reboot
 
 ```
+# Jetson Nano + NVIDIA L4T TensorFlow
+Need mount cuda/lib64 and aarch64-linux-gnu to container in order to use gpu (l4t+tensorflow1.15 is tested.)
+```bash
+docker run -it --rm -v /usr/local/cuda/lib64:/usr/local/cuda/lib64 -v /usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu nvcr.io/nvidia/l4t-tensorflow:r32.7.1-tf1.15-py3
+
+```
