@@ -1085,3 +1085,12 @@ Need mount cuda/lib64 and aarch64-linux-gnu to container in order to use gpu (l4
 docker run -it --rm -v /usr/local/cuda/lib64:/usr/local/cuda/lib64 -v /usr/lib/aarch64-linux-gnu:/usr/lib/aarch64-linux-gnu nvcr.io/nvidia/l4t-tensorflow:r32.7.1-tf1.15-py3
 
 ```
+# Login but no-sheel user (In order to use ssh jump server)
+add /usr/local/bin/noshell.sh
+```bah
+#!/bin/bash
+echo "This account is restricted and cannot execute commands."
+while true; do
+    sleep infinity
+done
+```
